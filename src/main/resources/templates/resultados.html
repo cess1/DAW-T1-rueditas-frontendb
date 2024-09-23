@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Rueditas - Resultado</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<h1>Rueditas</h1>
+<ul>
+  <li>Marca: <span th:text="${vehiculo.marca}"></span></li>
+  <li>Modelo: <span th:text="${vehiculo.modelo}"></span></li>
+  <li>Nro asientos: <span th:text="${vehiculo.nroAsientos}"></span></li>
+  <li>Precio: <span th:text="${vehiculo.precio}"></span></li>
+  <li>Color: <span th:text="${vehiculo.color}"></span></li>
+</ul>
+<a href="/" class="button">REGRESAR</a>
+</body>
+</html>

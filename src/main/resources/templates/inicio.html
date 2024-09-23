@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Rueditas - Buscar Vehículo</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<h1>Rueditas</h1>
+<form th:action="@{/buscar}" method="post">
+    <label for="placa">Ingrese una placa:</label>
+    <input type="text" id="placa" name="placa" required>
+    <button type="submit">BUSCAR</button>
+</form>
+<p th:if="${error}" th:text="${error}" style="color: red;"></p>
+</body>
+</html>
